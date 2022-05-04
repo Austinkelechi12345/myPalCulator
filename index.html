@@ -1,85 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>myCalculator</title>
-    
-    
+
+
     <!-- css linking -->
     <link rel="stylesheet" href="./css/bootstrap.css">
     <link rel="stylesheet" href="./css/styles.css">
-<!-- js linking -->
-    <script src="./js/jquery.js"></script>
+
+    <!-- js linking -->
+    <script src="./js/jquery-3.6.0.js"></script>
     <script src="./js/scripts.js"></script>
-    
-   
+    <script src="./js/bootstrap.bundle.js"></script>
+
+
 
 </head>
+
 <body>
-    <div class="container">
-        <h1>myCalculator</h1>
-        <form id="Calculator">
-<h2>Addition Section</h2>
-<div class="form-group">
-    <label for="add1">1st number</label>
-    <input type="text" name="" id="add1" class="form-control">
-</div>
-<div class="form-group">
-    <label for="add1">2nd number</label>
-    <input type="text" name="" id="add2" class="form-control">
-</div>
-<button type="submit" class="btn btn-danger">Add</button>
-<div id="result">
-
-</div>
-<h2>Subtraction Section</h2>
-<div class="form-group">
-    <label for="subtract1">1st number</label>
-    <input type="text" name="" id="subtract1" class="form-control">
-</div>
-<div class="form-group">
-    <label for="subtract2">2nd number</label>
-    <input type="text" name="" id="subtract2" class="form-control">
-</div>
-<button type="submit" class="btn btn-primary">subract</button>
-<div id="answer">
-
-</div>
-
-<h2>Multiplication Section</h2>
-<div class="form-group">
-    <label for="multiply1">1st number</label>
-    <input type="text" name="" id="multiply1" class="form-control">
-</div>
-<div class="form-group">
-    <label for="multiply2">2nd number</label>
-    <input type="text" name="" id="multiply2" class="form-control">
-</div>
-<button type="submit" class="btn btn-danger">multiply</button>
-<div id="after">
-
-</div>
-<h2>Division Section</h2>
-<div class="form-group">
-    <label for="divide1">1st number</label>
-    <input type="text" name="" id="divide1" class="form-control">
-</div>
-<div class="form-group">
-    <label for="divide2">2nd number</label>
-    <input type="text" name="" id="divide2" class="form-control">
-</div>
-<button type="submit" class="btn btn-info">Divide</button>
-<div id="resultant">
-
-</div>
-
-
-
+    <div class="container card">
+        <form id="mycalculator">
+         <div class="d-flex">
+             <details open="open">
+            <summary> <label for="Inputnumber1">Enter First Number</label>
+            </summary>
+            <input type="number" id="number1" class="form-control Inputnumber1"style="border: 2px solid skyblue;">
+        </details>
+            
+            <details open="open " class="secondno">
+                <summary> <label for="Inputnumber2" >Enter Second Number</label>
+                </summary>
+                <input type="number" id="number2" class="form-control pl-3 Inputnumber2"style="border: 2px solid skyblue;">
+            </details>
         </div>
-    </form>
+            <details close="close" class="thirdno">
+                <summary> <label for="Inputnumber3" >Enter third Number</label>
+                </summary>
+                <input type="number" id="number3" class="form-control Inputnumber3"style="border: 2px solid skyblue;">
+            </details>
+            <br>
+            >
+            <button type="submit" class="btn btn-outline-primary">Add</button>
+            <button type="submit" class="btn btn-outline-warning">Divide</button>
+            <button type="submit" class="btn btn-outline-danger">Multiply</button>
+            <button type="submit" for="modulo" class="btn btn-outline-info">Remainder</button>
+            <div class="form-group pl-3 pt-2" style="border: 2px solid green; margin-top:20px; height:50px;">
+                <p id="result"></p>
+            </div>
+        
+        </form>
     </div>
-    
+
+
+
 </body>
+
 </html>

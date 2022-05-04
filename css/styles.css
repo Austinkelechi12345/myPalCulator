@@ -1,0 +1,31 @@
+body{
+margin:0px;
+padding:0px;
+box-sizing:border-box;
+background-color:beige;
+}
+
+.form-control{
+    width:100px;
+}.border{width:200px;}
+.card{
+    width:380px;
+    height:300px;
+
+}
+.secondno{
+    margin-left:35px;
+}
+.Inputnumber2{
+    margin-left:50px;
+}
+.thirdno{
+ margin-left:95px;
+} 
+.Inputnumber3{
+    margin-left:30px;
+
+}
+.card{
+    margin-top:70px;
+}
