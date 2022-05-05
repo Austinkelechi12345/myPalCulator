@@ -2,7 +2,7 @@ body{
 margin:0px;
 padding:0px;
 box-sizing:border-box;
-background-color:beige;
+background-image:url(../images/calculator.jpg);
 }
 
 .form-control{
@@ -29,3 +29,4 @@ background-color:beige;
 .card{
     margin-top:70px;
 }
+

@@ -23,35 +23,38 @@
 
 <body>
     <div class="container card">
-        <form id="mycalculator">
-         <div class="d-flex">
-             <details open="open">
-            <summary> <label for="Inputnumber1">Enter First Number</label>
-            </summary>
-            <input type="number" id="number1" class="form-control Inputnumber1"style="border: 2px solid skyblue;">
-        </details>
-            
-            <details open="open " class="secondno">
-                <summary> <label for="Inputnumber2" >Enter Second Number</label>
-                </summary>
-                <input type="number" id="number2" class="form-control pl-3 Inputnumber2"style="border: 2px solid skyblue;">
-            </details>
-        </div>
+        <form id="myCalculator">
+            <div class="d-flex">
+                <details open="open">
+                    <summary> <label for="Inputnumber1">Enter First Number</label>
+                    </summary>
+                    <input type="number" id="number1" class="form-control Inputnumber1"
+                        style="border: 2px solid skyblue;">
+                </details>
+
+                <details open="open " class="secondno">
+                    <summary> <label for="Inputnumber2">Enter Second Number</label>
+                    </summary>
+                    <input type="number" id="number2" class="form-control pl-3 Inputnumber2"
+                        style="border: 2px solid skyblue;">
+                </details>
+            </div>
             <details close="close" class="thirdno">
-                <summary> <label for="Inputnumber3" >Enter third Number</label>
+                <summary> <label for="Inputnumber3">Enter third Number</label>
                 </summary>
-                <input type="number" id="number3" class="form-control Inputnumber3"style="border: 2px solid skyblue;">
+                <input type="number" id="number3" class="form-control Inputnumber3" style="border: 2px solid skyblue;">
             </details>
             <br>
-            >
-            <button type="submit" class="btn btn-outline-primary">Add</button>
-            <button type="submit" class="btn btn-outline-warning">Divide</button>
-            <button type="submit" class="btn btn-outline-danger">Multiply</button>
-            <button type="submit" for="modulo" class="btn btn-outline-info">Remainder</button>
-            <div class="form-group pl-3 pt-2" style="border: 2px solid green; margin-top:20px; height:50px;">
+            
+            <button id="add" class="btn btn-outline-primary">Add</button>
+            <button id="divide" class="btn btn-outline-warning">Divide</button>
+            <button id="multiply" class="btn btn-outline-danger">Multiply</button>
+            <button id="modulo" for="modulo" class="btn btn-outline-info">Mod</button>
+            <button id="subtract" for="subtract" class="btn btn-outline-dark">Sub</button>
+            <div class="form-group pl-3 pt-2 rounded" style="border: 2px solid green; margin-top:20px; height:50px;">
                 <p id="result"></p>
             </div>
-        
+
         </form>
     </div>
 
