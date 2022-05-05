@@ -16,12 +16,24 @@
     <script src="./js/jquery-3.6.0.js"></script>
     <script src="./js/scripts.js"></script>
     <script src="./js/bootstrap.bundle.js"></script>
+<style>
+    h2{
+        color:black;
+        background-color:darkorange;
+        width:230px;
+        font-size: 60px;
+        margin-left:40px;
+       
 
+    }
+</style>
 
 
 </head>
 
 <body>
+    
+    <pre><h2 class="center">myPal <text style="color:darkorange;"> culator</text></h2></pre>
     <div class="container card">
         <form id="myCalculator">
             <div class="d-flex">
@@ -45,7 +57,7 @@
                 <input type="number" id="number3" class="form-control Inputnumber3" style="border: 2px solid skyblue;">
             </details>
             <br>
-            
+
             <button id="add" class="btn btn-outline-primary">Add</button>
             <button id="divide" class="btn btn-outline-warning">Divide</button>
             <button id="multiply" class="btn btn-outline-danger">Multiply</button>
@@ -54,7 +66,8 @@
             <div class="form-group pl-3 pt-2 rounded" style="border: 2px solid green; margin-top:20px; height:50px;">
                 <p id="result"></p>
             </div>
-
+            <button type="reset" value="reset" class="btn btnreset btn-danger"
+                onclick='window.location.reload()'>Clear All!</button>
         </form>
     </div>
 

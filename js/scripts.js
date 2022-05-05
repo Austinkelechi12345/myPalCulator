@@ -10,7 +10,7 @@ function divide(number1, number2, number3) {
     return number1 / number2 / number3;
 }
 function modulo(number1, number2, number3) {
-    return number1 % number2 % number3;
+    return number1 % number2 ;
 }
 function multiply(numb1 , numb2 , numb3){
     return numb1 * numb2 * numb3;
@@ -67,11 +67,8 @@ $(document).ready(function () {
         e.preventDefault();
         const number1 = parseInt($("#number1").val());
         const number2 = parseInt($("#number2").val());
-        let number3 = parseInt($("#number3").val());
-
-        // if (isNaN(number3)) {
-        //     number3 = 1;
-        // }
+        // input 3 is not needed for modulo
+         
         const result = modulo(number1, number2, number3)
         $("#result").text(result);
     });

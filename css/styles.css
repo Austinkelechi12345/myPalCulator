@@ -3,16 +3,13 @@ margin:0px;
 padding:0px;
 box-sizing:border-box;
 background-image:url(../images/calculator.jpg);
+overflow-y:hidden;
 }
 
 .form-control{
     width:100px;
 }.border{width:200px;}
-.card{
-    width:380px;
-    height:300px;
 
-}
 .secondno{
     margin-left:35px;
 }
@@ -27,6 +24,9 @@ background-image:url(../images/calculator.jpg);
 
 }
 .card{
-    margin-top:70px;
+    margin-top:20px;
+    width:380px;
+    height:340px;
+    
 }
 
